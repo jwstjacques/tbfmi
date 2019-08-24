@@ -4,7 +4,7 @@
   "description": "The Bonfire Movie Index",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,21 @@
   "bugs": {
     "url": "https://github.com/jwstjacques/tbfmi/issues"
   },
-  "homepage": "https://github.com/jwstjacques/tbfmi#readme"
+  "homepage": "https://github.com/jwstjacques/tbfmi#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^5.16.0",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
 }
