@@ -1,0 +1,24 @@
+{
+  "name": "tbfmi",
+  "version": "1.0.0",
+  "description": "The Bonfire Movie Index",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwstjacques/tbfmi.git"
+  },
+  "keywords": [
+    "bonfire",
+    "movie",
+    "takehome"
+  ],
+  "author": "Jason St. Jacques",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jwstjacques/tbfmi/issues"
+  },
+  "homepage": "https://github.com/jwstjacques/tbfmi#readme"
+}
