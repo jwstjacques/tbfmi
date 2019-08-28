@@ -4,20 +4,20 @@ Eventual Heroku Link <https://tbfmi.herokuapp.com>
 
 ### Employs the use of the following packages:
 
-Express for routing
-Axios for requests
-Sequelize ORM
-pg for postgres assistance
-Validator for validation
-Mocha for unit/integration testing
-Chai for assertion in unit tests
-Chai-http to assist with unit tests
-jwt for auth tokens
-passport of auth management
-passport-jwt same as above
-body-parser to handle requests
-slugify to translate user names into useable slugs
-tmdb API for data
+- Express for routing
+- Axios for requests
+- Sequelize ORM
+- pg for postgres assistance
+- Validator for validation
+- Mocha for unit/integration testing
+- Chai for assertion in unit tests
+- Chai-http to assist with unit tests
+- jwt for auth tokens
+- passport of auth management
+- passport-jwt same as above
+- body-parser to handle requests
+- slugify to translate user names into useable slugs
+- tmdb API for data
 
 ### To start:
 
