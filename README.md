@@ -2,7 +2,8 @@
 
 Eventual Heroku Link <https://tbfmi.herokuapp.com>
 
-###Employs the use of the following packages:
+### Employs the use of the following packages:
+
 Express for routing
 Axios for requests
 Sequelize ORM
@@ -18,7 +19,7 @@ body-parser to handle requests
 slugify to translate user names into useable slugs
 tmdb API for data
 
-###To start:
+### To start:
 
 1. Install postgres
    > (ex. brew install postgresql)
@@ -45,7 +46,8 @@ tmdb API for data
 
 I use RoboCop (the greatest movie ever made) as my test movie. It has a tmdb id of 5548. RoboCop 2 and 3 are 5549 and 5550 respectively, but are less good movies.
 
-###Database
+### Database
+
 The database is in Postgres using Sequelize ORM.
 The tables are:
 
@@ -53,8 +55,16 @@ The tables are:
 2. movies
 3. cast_and_crew
 4. lookup_movie_cast_and_crew (handling associations between movies and their respective cast and crew)
+5. cast_and_crew_type (Only has director right now)
+6. genre (updating on inserts but not in use)
+7. search_keyword (not being utilized)
+8. lookup_user_movies
 
-###What can be accomplished:
+Because Sequeilze is silly about the pluralizatoin of tables vs. model, I opted for cast_and_crew over people, just cuz. I also chose movie/movies to avoid the medium/media business (personal choice, sue me).
+
+All meta data is stored in an entity attribute pattern in an JSONB column called attributes. This will allow for quick fleshing out, when necessary, is queryable (because Postgres is great), and allows for a lot of meta data and no joins!!!
+
+### What can be accomplished:
 
 1. Create an account.
 2. Login to an account (7 day auth token timeout)
@@ -64,18 +74,20 @@ The tables are:
 6. Search for a movie with a string (just searching on title at the moment), will return 1st page of matching results only
 7. View the library of a user (nothing is private, but cannot be changed by non-owner)
 
-###Validation:
+### Validation:
 
 1. All library changes (add, delete, rating) require auth token
 2. Search requires auth token since it is using an API key belonging to tbfmi
 3. Normal sanity adding (no same email, slugs cannot be the same, cannot change other's libraries, error handling)
 
-###What is done:
+### What is done:
 
 1. MVP routes (login/registration/search/movies)
 2. Integration tests with reasonable coverage
+3. Error handling
+4. Utilization of an external resource
 
-###What needs to be done:
+### What needs to be done:
 
 1. Change password (v2) _-- Super Trivial_
 2. Delete account (v2) _-- Super Trivial_
