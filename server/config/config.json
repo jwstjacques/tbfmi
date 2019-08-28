@@ -1,0 +1,14 @@
+{
+  "development": {
+    "username": "tbfmi",
+    "password": "1234",
+    "database": "tbfmi",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": true,
+    "port": 5432
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL"
+  }
+}

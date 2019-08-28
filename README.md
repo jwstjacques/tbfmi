@@ -1,5 +1,3 @@
-# tbfmi
-
-The Bonfire Movie Index
+# tbfmi - The Best Freakin' Movies
 
 Eventual Heroku Link <https://tbfmi.herokuapp.com>
