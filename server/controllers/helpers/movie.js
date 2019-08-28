@@ -107,7 +107,12 @@ module.exports = {
       const movies = await Movie.findAll(movieDetails);
 
       if (movies && movies.length) {
-        return convertResultsToObjects(movies);
+        const moviePayload = convertResultsToObjects(movies);
+        return {
+          page: 1,
+          total_results: moviePayload.length,
+          movies: moviePayload
+        };
       }
 
       return [];
