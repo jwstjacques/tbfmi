@@ -1,4 +1,4 @@
-const movieController = require('./Movie');
+const movieController = require('./movie');
 const searchController = require('./search');
 const userLibraryController = require('./userLibrary');
 const userController = require('./user');
