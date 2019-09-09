@@ -4,9 +4,11 @@
   "description": "The Bonfire Movie Index",
   "main": "server.js",
   "scripts": {
+    "heroku-postbuild": "npm install --production",
     "seed": "sequelize db:seed:all",
     "deseed": "sequelize db:seed:undo:all",
     "server": "nodemon server.js",
+    "start": "node server.js",
     "test": "mocha ./server/test --recursive --exit"
   },
   "repository": {
