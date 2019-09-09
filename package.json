@@ -1,7 +1,7 @@
 {
   "name": "tbfmi",
   "version": "1.0.0",
-  "description": "The Bonfire Movie Index",
+  "description": "The Best Freakin' Movie Index",
   "main": "server.js",
   "scripts": {
     "heroku-postbuild": "npm install --production",
@@ -16,7 +16,6 @@
     "url": "git+https://github.com/jwstjacques/tbfmi.git"
   },
   "keywords": [
-    "bonfire",
     "movie",
     "takehome"
   ],
